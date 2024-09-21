@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="src/info.css">
+        <title>Snake Game Rules</title>
+    </head>
+    <body style="background-image: url(media/yellow_background.jpg);">
+        <div class="sticky-container" style="background-image: url(media/yellow_background.jpg);">
+            <div id="snakeHead">
+                <img src="media/snake_head.png" />
+            </div>
+            <div id="snakeHead2">
+                <img src="media/snake_head.png" />
+            </div>
+            <h1>Snake Game: Rules</h1>
+        </div>
+        <div id="containerDiv">
+            <div id="textDiv">
+                <p>
+                    <strong style="font-family: Blackletter, Old English Text MT, Garamond, serif;">Purpose of Game:</strong> to Enjoy &#128512;&#128526; !!! ... and hang on for as long as possible before the game ends &#128542;
+                </p>
+                <ul id="mainList4">
+                    <li>The snake navigation is done using the arrow buttons on your keyboard: Up, Down, Left, Right &#127919</li>
+                </ul>
+                <p>
+                    <strong style="font-family: Blackletter, Old English Text MT, Garamond, serif;">Game ends on either of the following conditions:</strong>
+                </p>
+                <ul id="mainList">
+                    <li>Snake collides with a playground border</li>
+                    <img src="media/snake-border-collision.png" style="width: 10%; height: auto;"/>
+                    <br><br>
+                    <li>Snake collides with itself</li>
+                    <img src="media/snake-self-collision.png" style="width: 10%; height: auto;"/>
+                </ul>
+                <p> 
+                    <strong style="font-family: Blackletter, Old English Text MT, Garamond, serif;">Important to remember:</strong>
+                </p>
+                <ul id="mainList2">
+                    <li>On the playgound there are prizes to collect</li>
+                    <li>When collecting a prize it disappears and your score increments according to its worth</li>
+                    <li>The number of available prizes remains the same. As one is collected - a new one is added to the playground</li>
+                
+                    <li>Beware, as there is a catch: with every prize won, the snake grows longer - making it more tricky to manover without ending the game</li>
+                    <br>
+                    <li>Use CTRL + i to show / hide the statistics panel</li>
+                    <img src="media/game_control_panel.png" style="width: 5%; height: auto;"/>
+                    <br><br>
+                    <li>Use CTRL + m to show / hide all players highest scores panel ( your own player is marked <span style="background-color: yellow;">yellow</span> )</li>
+                    <img src="media/players_scores_stats_panel.png" style="width: 12%; height: auto;"/>
+                </ul>
+                <p>
+                    <strong style="font-family: Blackletter, Old English Text MT, Garamond, serif;">List of all prizes, with their benefits:</strong>
+                </p>
+                <table style="font-family: Blackletter, Old English Text MT, Garamond, serif; width: 700px; margin-bottom: 80px;">
+                    <tr>
+                        <th style="width: 60px;">Prize</th>
+                        <th style="width: 80px;">Gained Score</th>
+                        <th style="width: 160px;">Units added to Snake Length</th>
+                    </tr>
+                    <tr>
+                        <td><img src="media/bitcoin.png" /></td>
+                        <td>50</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td><img src="media/dollar-bills.png" /></td>
+                        <td>40</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td><img src="media/ring.png"/></td>
+                        <td>40</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td><img src="media/strawberry.png" /></td>
+                        <td>10</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td><img src="media/diamond.png" /> </td>
+                        <td>20</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td><img src="media/banana.png"/></td>
+                        <td>15</td>
+                        <td>10</td>
+                    </tr>
+                </table>
+                <hr style="margin-top: 30px; color: black; border-width: 8px; width:50%">
+                <p style="margin-top: 40px;">
+                    <strong style="font-family: Blackletter, Old English Text MT, Garamond, serif;">Planned for future release:</strong>
+                </p>
+                <ul id="mainList3">
+                    <li>As the player is able to remain in the game longer - the pace increases</li>
+                    <li>As the player is able to remain in the game longer - additions to the snake length increase</li>
+                    <li>Timer added for reaching a minimal gained score per time period ( e.g. 100 points in 2min )</li>
+                </ul>
+                <div id="poweredByStatement">
+                    Powered by Shmuel Kaufmann, Sept 2024 ( <a href="mailto:shmuel.kaufmann1@gmail.com">shmuel.kaufmann1@gmail.com</a> )
+                  </div>
+            </div>
+        </div>
+    </body>
+</html>

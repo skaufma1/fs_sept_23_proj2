@@ -1,0 +1,114 @@
+.canvas-container, .prizes-container {
+    position: relative;
+    width: 100%;
+    height: 100%;  
+}
+.endgame-overlay {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#endGame, #startGame {
+    top: 0;
+    display: none;
+}
+#scoreContainer {
+    position: fixed;
+    right: 0px;
+    bottom: 10px;
+    color: black;
+    border: 4px solid brown;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 4px;
+    padding-left: 4px;
+    font-family: "Blackletter", "Old English Text MT", Garamond, serif;
+    font-size: 30px;
+}
+#prizesStatsContainer {
+    position: fixed;
+    right: 0px;
+    top: 70px;
+    color: black;
+    border: 4px solid brown;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: "Blackletter", "Old English Text MT", Garamond, serif;
+    font-size: 25px;
+}
+#playersInfoContainer {
+    position: fixed;
+    right: 0px;
+    bottom: 140px;
+    color: black;
+    border: 4px solid brown;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: "Blackletter", "Old English Text MT", Garamond, serif;
+    font-size: 15px;
+    width: 130px;
+    height: 250px;
+}
+#poweredByStatement {
+    position: absolute;
+    left: 10px;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+#audioControlDiv {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+#audioOn, #audioOff {
+    width: 35px;
+    height: 35px;
+}
+
+#loginInputContainer {
+    position: absolute; 
+    vertical-align: center;
+    height: 80px;
+    width: 650px;
+    bottom: 10%; 
+    left: 50%;
+    transform: translateX(-50%); /* Adjust for the width of the element */
+    z-index: 1000; 
+    box-shadow: 20px 20px 8px rgba(0, 2, 0, 0.2); /* Shadow effect */
+    padding: 20px; /* Optional: to add space inside the div */
+    border: 5px solid rgba(0, 0, 0, 0.4); /* Very light border */
+    border-radius: 15px; /* Optional: match the border-radius of your div */
+}
+
+#playerNameDiv {
+    font-family: Blackletter, Old English Text MT, Garamond, serif;
+    font-size: 60px;
+    position: absolute;
+    z-index: 1500;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 800px;
+    color: rgb(254, 66, 66); /* Gold text color for an elegant look */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4); /* Black shadow with shading effect */
+    -webkit-text-stroke: 0.9px black; /* Adds a slim black line for a distinctive appearance */
+}
+
+#playersNameScoreContainer {
+    margin-left: auto;
+    margin-right: auto;
+    top: 30px;
+    position: absolute;
+    overflow-y: auto; /* Enable vertical scroll bar if content exceeds the height */
+    height: 210px;
+    right: 0px;
+    width: 140px;
+}

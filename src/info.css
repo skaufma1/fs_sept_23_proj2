@@ -1,0 +1,75 @@
+#containerDiv {
+    position: relative;
+    width: 100%;
+    height: 100%;  
+  }
+.sticky-container {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    align-items: center; 
+    z-index: 1000; 
+}
+#snakeHead {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+#snakeHead2 {
+    position: absolute;
+    top: 0;
+    left: 30px;
+}
+h1 {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 0;
+    font-size: 72px;
+    color: rgb(92, 64, 51);
+    font-family: "Blackletter", "Old English Text MT", Garamond, serif;
+}
+#mainList, #mainList2, #mainList3, #mainList4 {
+    padding-left: 80px;
+    font-size: 22px;
+}
+#mainList3 {
+    padding-bottom: 50px;
+}
+p {
+    font-size: 26px;
+}
+#textDiv {
+    position: absolute;
+    align-items: center;
+    top: 200px;
+    left: 140px;
+}
+#poweredByStatement {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+table {
+    border-collapse: collapse;
+    font-size: 22px;
+    width: 100%;
+}
+th, td {
+    border: 2px solid black; 
+    text-align: center; 
+    padding-left:20px;
+    padding-right: 20px;
+    align-items: center;
+    height: 65px;
+}
+th {
+    color: lightgoldenrodyellow;
+    background-color: rgb(92, 64, 51); 
+    opacity: 80%;
+}
+td {
+    opacity: 100%;
+}

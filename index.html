@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <script type="module" src="http_client.js"></script>
+    <script type="module" src="src/main.js"></script>
+    <title>Project 1: Snake Game</title>
+  </head>
+  <body>
+    <div class="canvas-container">
+      <canvas id="gameCanvas" width="1350" height="680" style="border:5px solid rgb(94, 136, 72);"></canvas> 
+      <div id="endGameDiv" class="endgame-overlay">
+        <img id="startGame" src="media/start-game.png" width="700px" height="500px"/>
+        <img id="endGame" src="media/end-game.png" width="700px" height="500px"/>
+      </div>
+      <div id="poweredByStatement">
+        Powered by Shmuel Kaufmann, Sept 2024
+      </div>
+      <div id="playerNameDiv" style="display: none">
+      </div>
+    </div>
+    <div id="scoreContainer" style="background-image: url(media/yellow_background.jpg); display: none;">
+      Score: <span id="scoreDisplay">0</span>
+    </div>
+    <div id="prizesStatsContainer" style="background-image: url(media/yellow_background.jpg); display: none;">
+      <div>
+        <img src="media/diamond.png" style="width: 20px; height: 17px;"/> : <span id="diamondCount">0</span>
+      </div>
+      <div>
+        <img src="media/banana.png" style="width: 20px; height: 11px;"/> : <span id="bananaCount">0</span>
+      </div>
+      <div>
+        <img src="media/bitcoin.png" style="width: 20px; height: 17px;"/> : <span id="bitcoinCount">0</span>
+      </div>
+      <div>
+        <img src="media/ring.png" style="width: 20px; height: 20px;"/> : <span id="ringCount">0</span>
+      </div>
+      <div>
+        <img src="media/strawberry.png" style="width: 20px; height: 28px;"/> : <span id="strawberryCount">0</span>
+      </div>
+      <div>
+        <img src="media/dollar-bills.png" style="width: 20px; height: 13px;"/> : <span id="dollarsCount">0</span>
+      </div>
+      <div style="font-family: Arial, Helvetica, sans-serif; font-size: 10px; text-align: center; padding-top: 5px;">
+        CTRL + i
+      </div>
+    </div>
+    <div id="playersInfoContainer" style="background-image: url(media/yellow_background.jpg); display: none;">
+      <div id="playersNameScoreContainer">
+      </div>
+    </div>
+    <div id="loginInputContainer" style="background-image: url(media/yellow_background.jpg);"></div>
+    </div>
+
+    <div id="prizes-container">
+      <div id="diamondDiv">
+        <img id="diamondImg" src="media/diamond.png" style="width: 62px; height: 51px; display: none;"/>
+      </div>
+      <div id="bananaDiv">
+        <img id="bananaImg" src="media/banana.png" style="width: 76px; height: 42px; display: none;"/>
+      </div>
+      <div id="bitcoinDiv">
+        <img id="bitcoinImg" src="media/bitcoin.png" style="width: 50px; height: 44px; display: none;"/>
+      </div>
+      <div id="ringDiv">
+        <img id="ringImg" src="media/ring.png" style="width: 60px; height: 60px; display: none;"/>
+      </div>
+      <div id="strawberryDiv">
+        <img id="strawberryImg" src="media/strawberry.png" style="width: 47px; height: 68px; display: none;"/>
+      </div>
+      <div id="dollarsDiv">
+        <img id="dollarsImg" src="media/dollar-bills.png" style="width: 97px; height: 66px; display: none;"/>
+      </div>
+    </div>
+    <div id="audioControlDiv">
+      <img id="audioOn"  src="media/audio-on.png"  style="display: inline;" />   
+      <img id="audioOff" src="media/audio-off.png" style="display: none;" />  
+    </div>
+    
+    <img id="snakeHead_up"    src="media/snake_head_up.png" style="display: none;" />   
+    <img id="snakeHead_right" src="media/snake_head_right.png" style="display: none;" />   
+    <img id="snakeHead_down"  src="media/snake_head_down.png" style="display: none;" />   
+    <img id="snakeHead_left"  src="media/snake_head_left.png" style="display: none;" />  
+    
+    
+    <button id="autoPlayBtn" style="display: none;"></button>
+    <audio id="collisionSound" controls style="display: none;">
+      <source src="media/collision_alert.mp3" type="audio/mpeg">
+    </audio>  
+    <audio id="gameStartTune" controls style="display: none;" preload="auto">
+      <source src="media/game_start.wav" type="audio/wav">
+    </audio>   
+    <audio id="prizeHitSound" controls style="display: none;">
+      <source src="media/prize_hit.mp3" type="audio/mpeg">
+    </audio>   
+    <audio id="statsPanelSound" controls style="display: none;">
+      <source src="media/stats_panel.mp3" type="audio/mpeg">
+    </audio> 
+  </body>
+</html>
